@@ -1,0 +1,367 @@
+ 
+
+#box-relatorio {
+  position: relative;
+  width: 48%;
+  height: 570px;
+  background-color:#FBFBFB ;
+  border-radius: 10px;
+  bottom: 5%;
+  right: 1%;
+  
+
+}
+
+.search-text{
+  width: 63%;
+  background-color: #D6DADF;
+  border: transparent;
+}
+
+p {
+  padding-top: 30px;
+  padding-left: 40px;
+  font: 20px ;
+
+
+}
+
+
+.text-relatorio {
+  padding-left: 90px;
+  font-size: 15px
+
+}
+
+.text-relator{
+  position: relative;
+  bottom: 30px;
+  padding-left: 90px;
+  font-size: 15px
+  
+
+}
+
+.antes {
+  position: relative;
+  left: 45%;
+  font-size: 13px;
+  bottom: 10px;
+}
+
+.depois {
+  position: relative;
+  left: 45%;
+  font-size: 13px;
+
+}
+
+.button-empresa {
+  position: relative;
+  left: 34%;
+  bottom: 60px;
+ 
+}
+
+.button-empr {
+  position: relative;
+  bottom: 60px;
+}
+
+
+
+.edicao {
+  position: relative;
+  left: 45px;
+  bottom: 40px;
+}
+
+.editar {
+font-size: 18px;
+padding-bottom: 20px;
+}
+
+.editar-dados {
+color: #000000;
+font-size: 13px;
+}
+
+#select {
+  position: relative;
+  background-color: #D6DADF;
+  width: 130px;
+  left: 19%;
+  border-radius: 10px;
+  height: 25px;
+  width: 130px;
+  border: transparent;
+}
+
+.foto {
+  width: 40px;
+  position: relative;
+  top: 10px;
+}
+
+
+
+#inicio {
+  position: relative;
+  background-color: #D6DADF;
+  width: 130px;
+  left: 19%;
+  border-radius: 5px;
+  height: 25px;
+  border: transparent;
+}
+
+#fim {
+  position: relative;
+  background-color:#D6DADF;
+  width: 130px;
+  left: 53%;
+  border-radius: 5px;
+  height: 25px;
+  border: transparent;
+
+}
+
+.button {
+  position: relative;
+  left: 34%;
+  bottom: 55px;
+  padding: 3px;
+}
+
+ 
+.disp {
+  position: relative;
+  padding: 5px;
+  bottom: 5px;
+  
+}
+
+.campo {
+  width: 15px;
+}
+
+input [type=chebox] {
+  color: aqua;
+}
+.preenc {
+
+  position: relative;
+  left: 5%;
+  padding: 10px;
+  bottom: 58px;
+
+}
+
+.disp1 {
+  position: relative;
+  left: 36%;
+  bottom: 155px;
+  
+}
+
+.preenc1 {
+  position: relative;
+  left: 42%;
+  bottom: 200px;
+
+}
+
+.acresc {
+  position: relative;
+  bottom: 28px;
+  font-size: 14px;
+}
+ 
+.red-con {
+  position: relative;
+  bottom: 25px;
+  font-size: 14px;
+}
+
+.red-emi {
+  position: relative;
+  bottom: 22px;
+  font-size: 14px;
+}
+
+.hora-p {
+  position: relative;
+  bottom: 21px;
+  font-size: 14px;
+}
+
+.posi-ranc {
+  position: relative;
+  bottom: 18px;
+  font-size: 14px;
+  }
+
+.porc-rat {
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+#box-visual {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: 47%;
+    height: 570px;
+    background-color: #FBFBFB ;
+    border-radius: 10px;
+}
+
+.visual {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.icon-medio {
+  position: relative;
+  left: 10%;
+  width: 300px;
+  height: 400px;
+  
+}
+
+
+
+.conf-relatorio{
+  width: 22%;
+  height: 30%;
+  background-color: #FBFBFB ;
+  position: relative;
+  bottom: 65%;
+  left: 75%;
+}
+
+/*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+input[type="button"] {
+  border-radius: 20px;
+  width: 130px;
+  margin: 7px 0;
+  padding: 11px; 
+  
+}
+
+.compart {
+  border-style: solid;
+  border-color: #4BB4AA;
+  padding: 10px;
+  color: #4BB4AA;
+
+}
+
+.pdf {
+  border-style: solid;
+  border-color:#9C27B0;
+  color: #9C27B0;
+
+}
+
+.impri {
+ border-style: solid;
+ border-color:  #FFC107;
+ color:  #FFC107;
+
+}
+
+
+.inputIcon input[type="button"] {
+  padding-left: 40px;
+}
+
+.inputIcon {
+  position: relative;
+  width: 40px;
+}
+
+.inputIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+}
+
+.maior-menor {
+  width: 30%;
+  height: 20%;
+  background-color:#FBFBFB ;
+  position: relative;
+  bottom: 60%;
+  left: 70%;
+  border-radius: 20px;
+
+}
+
+.maior-icon {
+    width: 50%;
+    height: 60%;
+
+}
+
+.menor-icon {
+  width: 50%;
+  height: 60%;
+
+}
+
+.icone1 {
+  width: 50%;
+  height: 60%;
+  background-color:#FBFBFB;
+  position: relative;
+  bottom: 20%;
+  right: 20px;
+  border-radius: 30px;
+  border: transparent;
+}
+
+.icone2 {
+  width: 50%;
+  height: 60%;
+  background-color:#FBFBFB;
+  position: relative;
+  bottom: 80%;
+  left: 40%;
+  border-radius: 30px;
+  border: transparent;
+}
+
+
+.pagination {
+  position: relative;
+  left: 10%;
+  bottom: 45%;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 10px;
+  
+}
+
+.pagination a.active {
+  background-color: #959b95;
+  color: white;
+  border: 1px solid #959b95;
+}
+
+.pagination a:hover:not(.active) {background-color:#ECD6F0;}
+

@@ -1,0 +1,145 @@
+.box-consumo{
+    width: 102%;
+    height: 330px;
+    background-color: #FBFBFB;
+    position: relative;
+    right:20px;
+    border-radius: 20px;
+  }
+  .card-consumo{
+    position: relative;
+    left: 40px;
+    top: 30px;
+    width: 250px;
+    
+}
+.btn{
+  position: relative;
+  left: 3%;
+  bottom: 75%;
+  width: 270px;
+}
+
+
+select{
+  background-color: #D6DADF;
+}
+.geral{
+  width: 180px;
+}
+.btn{
+  position: relative;
+  left: 5%;
+  width: 270px;
+  
+}
+input{
+  background-color: #D6DADF;
+  border: transparent;
+}
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.card-rateio2{
+  width: 51%;
+  height: 220px;
+  position: relative;
+  margin-top: 10px;
+  background-color: #FBFBFB;
+  border-radius: 20px;
+  right:20px;
+}
+.card-horario{
+  width: 50%;
+  height: 220px;
+  position: relative;
+  margin-top: 10px;
+  background-color: #FBFBFB;
+  border-radius: 20px;
+  left:50%;
+  bottom: 240px;
+}
+.card-r{
+  position: relative;
+  left: 40px;
+  top:10px;
+  width: 200px;
+}
+.card-h{
+  position: relative;
+  left: 40px;
+  top:10px;
+  width: 200px;
+}
+.grafico{
+  position: relative;
+  left: 210%;
+  width: 390%;
+  bottom: 50px;
+}
+.grafico2{
+  position: relative;
+  width: 70%;
+  bottom: 40%;
+  left: 3%;
+  
+}
+.box-scroll{
+  position: relative;
+  width: 23%;
+  height: 40%;
+  background-color: #FBFBFB;
+  left: 75%;
+  border-radius: 10%;
+  bottom: 30px;
+}
+
+.grafico3{
+  position: relative;
+  width: 97%;
+  bottom: 6%;
+}
+.lg-txt>input{
+  width: 120px;
+}
+.img-trofeu{
+  position: relative;
+  top: 40px;
+  width: 60px;
+  left: 4px;
+}
+.legend-minibox{
+  font-size: 12px;
+  position: relative;
+  left: 70px;
+  bottom: 40px;
+  width: 60px;
+}
+.legend-minibox2{
+  position: relative;
+  font-size: 14px;
+  color: #FFC107;
+  left: 70px;
+  bottom: 52px;
+  
+}
+.img-seta{
+  position: relative;
+  left: 130px;
+  bottom: 145px;
+}
+.search-box1{
+  width: 23%;
+  position: relative;
+  left: 465px;
+  bottom: 145px;
+}
+.search-text{
+  width: 63%;
+}
+.foto {
+  width: 40px;
+  position: relative;
+  top: 10px;
+}

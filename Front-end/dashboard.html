@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/a8b85d7a65.js" crossorigin="anonymous"></script>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assents/css/styles.css">
+        <link rel="stylesheet" href="assents/css/dashboard.css">
+        <!-- ===== HTML ===== -->
+        <title>Dashboard</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <div class="search-box">
+                <input class="search-text" name="" placeholder="">
+                <a class="search-btn" href="#">
+                    <img src="assents/icons/ic_busca1.svg" class="mover">
+                </a>
+            </div>
+            <!-- ===== Cabeçalho ícones ===== -->
+            <div class="configuration">
+        
+                <a href="#"><i class="fas fa-cog"></i></a>
+                <a href="#"><i class="far fa-bell"></i></i></a>
+                <img src="assents/icons/índice.jpg" class="foto">
+                <script src="https://kit.fontawesome.com/a8b85d7a65.js" crossorigin="anonymous"></script>
+            </div>
+            <select name="" id="selec"></select>
+        </header>
+        <!-- ===== Menu + icones menu ===== -->
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img src="assents/icons/terrain-24px.svg" alt="">
+                        <span class="nav__logo-name">Luz no Porto</span>
+                    </a>
+                    <!-- Icones menu-->
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                            <i class='bx bxs-dashboard nav__icon' ></i>
+                                <span class="nav__name">Dashboard</span>
+                            </a>
+
+                        <a href="dados.html" class="nav__link">
+                            <i class='fas fa-align-justify nav__icon' ></i>
+                            <span class="nav__name">Dados</span>
+                        </a>
+                        
+                        <a href="consumo.html" class="nav__link">
+                            <i class='far fa-chart-bar nav__icon' ></i>
+                            <span class="nav__name">Consumo Energético</span>
+                        </a>
+
+                        <a href="relatorio.html" class="nav__link">
+                            <i class='fas fa-clipboard-list nav__icon' ></i>
+                            <span class="nav__name">Relatório</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+        <!-- div box-consumo-->
+        <div class="box-consumo">
+            <div class="card-consumo">
+                <p>Consumo Energético</p>
+            </div>
+            
+                <div class="selec-empresa">
+                    <select name="empresa" id="">
+                        <option value="">Empresa</option>
+                        <option value=""></option>
+                    </select><br>
+                </div>
+                <div class="selec-dispositivo">
+                    <select name="" id="">
+                        <option value="">Dispositivo</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="selec-loca">
+                    <select name="" id="">
+                        <option value="">Localização</option>
+                        <option value=""></option>
+                    </select>
+                    
+                    <div class="selec-periodo">
+                        <select name="" id="">
+                            <option value="">Périodo</option>
+                            <option value="">Semanal</option>
+                            <option value="">Mensal</option>
+                            <option value="">Anual</option>
+                            <option value="">Diário</option>
+                        </select>
+                    </div>
+
+                    <div class="btn-periodo">
+                     
+                        
+                    </div>
+                     <!-- ===== grafico consumo energetico===== -->
+                    <div class="grafico">
+                        <canvas id="myChart" width="600" height="160"></canvas>
+                        <script>
+                        var ctx = document.getElementById('myChart');
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun','Ago','Set','Out','Nov','Dez'],
+                                datasets: [{
+                                    label: '# Consumo',
+                                    data: [12, 7, 15, 11, 9, 7, 9,11,3,2,6,5],
+                                    backgroundColor: [
+                                    'rgba(144, 204, 235, 0.3)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                    ],
+                                    borderColor: [
+                                       
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                        </script>
+    
+                        </div>
+
+                </div>
+                 <!-- ===== box gerar relatorio ===== -->
+                <div class="grelatorio">
+                    <h3 class="txt-relatorio">Gerar Relatório</h3>
+                    <!-- ===== Botões div relatorio ===== -->
+                    <input type="submit" class="btn-1" value="Compartilhar">
+                    <input type="submit" class="btn-1" value="Gerar PDF">
+                    <form action="" onClick="window.print()">
+                    <input type="submit" class="btn-1" value="Imprimir">
+                    </form>
+            </div>
+            
+        </div>
+
+
+        <!-- div box-rateio-->
+        <div class="box-rateio">
+            <div class="rateio">
+                <p>Rateio</p>
+            </div>
+
+            <div class="box-scroll">
+                <div class="img-trofeu">
+                    <img src="assents/icons/trofeu.jpg" alt="" >
+                </div>
+                <div class="legend-minibox">
+                    Empresa mais <br> economica
+                </div>
+                <div class="legend-minibox2">
+                    <h2>César</h2>
+                </div>
+                <div class="img-seta">
+                    <img src="assents/icons/ic_expandir.svg" alt="">
+                </div>
+            </div>
+
+
+         
+             <!-- ===== grafico rateio ===== -->
+            <div class="grafico2">
+                <canvas id="myChart2" width="600" height="140"></canvas>
+                <script>
+                var ctx = document.getElementById('myChart2');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Cesar', 'Ngpd', 'Accenture', 'Avanade', 'Bidweb', 'Elcoma','Daccord','Pitang'],
+                        datasets: [{
+                            label: '# Rateio',
+                            data: [16, 25, 14, 11, 6, 4, 4,3,3],
+                            backgroundColor: [
+                                'rgba(156, 39, 176, 70)',
+                                'rgba(220,220,220)',
+                                'rgba(220,220,220)',
+                                'rgba(220,220,220)',
+                                'rgba(220,220,220)',
+                                'rgba(220,220,220)'
+                            ],
+                            borderColor: [
+                                
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+                </script>
+                <!-- ===== ícones setas de navegação ===== -->
+                <div class="navdir">
+                    <a href=""><img src="assents/icons/ic_navegacao_dir.svg" alt=""></a>
+                </div>
+                <div class="navesq">
+                    <a href=""><img src="assents/icons/ic_navegacao_esq.svg" alt=""></a>
+                </div>
+
+                </div>
+            <!-- div cards menores-->
+        </div>
+        <!-- ===== card consumo ===== -->
+        <div class="card-cm"><img src="assents/icons/ic_consumo.svg" class="flash">
+            <div class="textcard"> Consumo Médio</div>
+             <div class="number-card"> 1200 kWh</div></div>
+            <!-- ===== card redução ===== -->
+        <div class="reducao-consumo"><img src="assents/icons/ic_reducao(1).svg" class="reducao">
+            <div class="textcard1"> Redução de Consumo</div>
+            <div class="number-card1">324  kWh</div></div>
+                <!-- ===== card emissões ===== -->
+        <div class="reducao-emissoes"><img src="assents/icons/ic_eco.svg" class="emissoes">
+            <div class="textcard2">  Redução de Emissões</div> 
+            <div class="number-card2">95.58 t CO2</div></div>
+        
+        <!--===== MAIN JS =====-->
+        <script src="assents/js/main.js"></script>
+    </body>
+</html>

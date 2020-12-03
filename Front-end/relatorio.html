@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assents/css/styles.css">
+    <link rel="stylesheet" href="assents/css/relatorio.css">
+
+    <title>Relatório</title>
+</head>
+
+<body id="body-pd">
+        <!-- ===== MENU HORIZONTAL===== -->
+
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+        <div class="search-box">
+            <input class="search-text" name="" placeholder="">
+            <a class="search-btn" href="#">
+                <img src="assents/icons/ic_busca1.svg" class="mover">
+            </a>
+        </div>
+
+        <div class="configuration">
+
+            <a href="#"><i class="fas fa-cog"></i></a>
+            <a href="#"><i class="far fa-bell"></i></i></a>
+            <img src="assents/icons/índice.jpg" class="foto">
+
+            <script src="https://kit.fontawesome.com/a8b85d7a65.js" crossorigin="anonymous"></script>
+        </div>
+        <select name="" id="selec"></select>
+    </header>
+
+
+        <!-- ===== MENU VERTICAL ===== -->
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <img src="assents/icons/terrain-24px.svg">
+                    <span class="nav__logo-name">Luz no Porto</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="dashboard.html" class="nav__link active">
+                        <i class='bx bxs-dashboard nav__icon'></i>
+                        <span class="nav__name">Dashboard</span>
+                    </a>
+
+                    <a href="dados.html" class="nav__link">
+                        <i class='fas fa-align-justify nav__icon'></i>
+                        <span class="nav__name">Dados</span>
+                    </a>
+
+                    <a href="consumo.html" class="nav__link">
+                        <i class='far fa-chart-bar nav__icon'></i>
+                        <span class="nav__name">Consumo Energético</span>
+                    </a>
+
+                    <a href="relatorio.html" class="nav__link">
+                        <i class='fas fa-clipboard-list nav__icon'></i>
+                        <span class="nav__name">Relatório</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+    <!--===== BOX RELATORIO =====-->
+
+
+    <div id="box-relatorio">
+        <p>Relatório</p><br>
+
+
+        <div class="text-relatorio">Período</div>
+        <div class="antes">de</div>
+        <div class="depois">até</div>
+
+        <div class="busca">
+
+            <div class="button-empresa">
+                <input type="date" name="dt" id="inicio">
+            </div><br>
+
+
+            <div class="button-empr">
+
+                <input type="date" name="dt" id="fim">
+
+            </div><br>
+
+
+            <span class="text-relator">Filtros</span>
+
+            <div class="button">
+                <select name="luz" id="select">
+                    <option value="">Empresa</option>
+                </select><br>
+            </div>
+
+            <div class="button">
+                <select name="luz" id="select">
+                    <option value="">Dispositivo</option>
+                </select><br>
+            </div>
+
+            <div class="button">
+                <select name="luz" id="select">
+                    <option value="">Localização</option>
+                </select>
+            </div><br>
+
+
+
+            <div class="edicao">
+                <div class="editar">Personalizar Relatório</div>
+                <div class="editar-dados">Selecione os dados que deseja incluir:</div><br>
+
+
+                <div class="disp">
+
+                    <input type="checkbox" class="campo"><br>
+                    <input type="checkbox" class="campo"><br>
+                    <input type="checkbox" class="campo"><br>
+                </div>
+
+                <div class="preenc">
+                    <div class="acresc">Consumo médio</div>
+                    <div class="red-con">Redução de consumo</div>
+                    <div class="red-emi">Redução de emissões</div>
+                </div>
+
+                <div class="disp1">
+                    <input type="checkbox" class="campo"><br>
+                    <input type="checkbox" class="campo"><br>
+                    <input type="checkbox" class="campo">
+
+                </div>
+
+                <div class="preenc1">
+                    <div class="hora-p">Horário de pico</div>
+                    <div class="posi-ranc">Posição no ranking de ecônomia</div>
+                    <div class="porc-rat">Porcentagem no rateio</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!--===== BOX VISUALIZAÇAO =====-->
+
+
+
+    <div id="box-visual">
+        <p class="visual">Visualização</p>
+
+
+
+
+        <div class="icon-visu">
+
+            <img src="assents/icons/relatorio.jpg" class="icon-medio"><br>
+        </div>
+ 
+
+        <div class="conf-relatorio">
+
+            <div class="inputIcon">
+                <input type="button" value="Compartilhar" class="compart">
+                <i><img src="assents/icons/ic_compartilhar2.svg " alt=""></i>
+            </div>
+
+            <div class="inputIcon">
+                <input type="button" value="Gerar PDF" class="pdf">
+                <i><img src="assents/icons/ic_pdf2.svg " alt=""></i>
+            </div>
+
+            <div class="inputIcon">
+                <input type="button" value="Imprimir" class="impri">
+                <i><img src="assents/icons/ic_imprimir2.svg " alt=""></i>
+            </div>
+        </div>
+
+        <div class="maior-menor">
+
+           <button class="icone1"><img src="assents/icons/ic_zoom_in.svg" class="maior-icon"></button>
+        
+            <button class="icone2"><img src="assents/icons/ic_zoom_out.svg" class="menor-icon"></button>
+
+        </div>
+
+
+        <div class="pagination">
+
+            <a href="#">Anterior</a>
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+            <a href="#">Proxímo</a>
+
+
+        </div>
+
+
+
+
+
+        <div>
+
+
+            <!--===== MAIN JS =====-->
+            <script src="assents/js/main.js"></script>
+</body>
+
+</html>

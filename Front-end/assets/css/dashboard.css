@@ -1,0 +1,272 @@
+/*=====  =====*/
+.box-consumo{
+    width: 102%;
+    height: 310px;
+    background-color: #FBFBFB;
+    position: relative;
+    right:20px;
+    border-radius: 20px;
+  }
+  .box-rateio{
+    width: 80%;
+    height: 250px;
+    background-color: #FBFBFB;
+    position: relative;
+    right: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+/*===== Card consumo energetico =====*/
+  .card-cm{
+    width: 21%;
+    height: 80px;
+    background-color: #EAECEE;
+    position: relative;
+    left: 79%;
+    bottom:250px;
+    border-radius: 15px;
+  
+  }
+  /*===== Card redução =====*/
+  .reducao-consumo{
+    width: 21%;
+    height: 80px;
+    background-color: #EAECEE;
+    position: relative;
+    left: 79%;
+    bottom:245px;
+    border-radius: 15px;
+  }
+  /*===== Card Emissões =====*/
+  .reducao-emissoes{
+    width: 21%;
+    height: 80px;
+    background-color: #EAECEE;
+    position: relative;
+    left: 79%; 
+    bottom:240px;
+    border-radius: 15px;
+  }
+  /*===== Img Raio card consumo e posicionamento =====*/
+  .flash{
+    width: 60px;
+    position: relative;
+    top: 10px;
+    
+  }
+  /*===== img emissão card emissão e posicionamento =====*/
+  .emissoes{
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+  /*===== img redução card redução e posicionamento =====*/
+  .reducao{
+    width: 50px;
+    position: relative;
+    top: 20px;
+    left: 5px;
+  }
+  /*===== posicionamento texto do card  =====*/
+  .textcard{
+    position: relative;
+    bottom: 61px;
+    left: 27%;
+    width: 180px;
+  }
+  /*===== posicionamento texto do card  =====*/
+  .textcard1{
+    position: relative;
+    bottom: 50px;
+    left:25%;
+    width: 180px;
+  }
+  /*===== posicionamento texto do card  =====*/
+  .textcard2{
+    position: relative;
+    bottom: 50px;
+    left: 27%;
+    width: 180px;
+  }
+  /*===== posicionamento numeros do card  =====*/
+  .number-card{
+    position: relative;
+    bottom: 50px;
+    left: 65px;
+    font-size: 25px;
+    width: 184px;
+    
+  }
+  /*===== posicionamento numeros do card  =====*/
+  .number-card1{
+    position: relative;
+    bottom: 40px;
+    left: 75px;
+    font-size: 25px;
+    width: 184px;
+    
+  }
+  /*===== posicionamento numeros do card  =====*/
+  .number-card2{
+    position: relative;
+    bottom: 45px;
+    left: 75px;
+    font-size: 25px;
+    width: 184px;
+  }
+  /*===== posicionamento titulo rateio  =====*/
+  .rateio{
+    position: relative;
+    left: 40px;
+    top: 30px;
+  }
+
+/*===== posicionamento titulo consumo  =====*/
+  .card-consumo{
+      position: relative;
+      left: 40px;
+      top: 30px;
+      width: 250px;
+      
+  }
+  /*===== Font titulo =====*/
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  
+  /*===== estilo selects  =====*/
+  .selec-empresa{
+      position: relative;
+      left: 300px;
+      width: 50px;
+      bottom: 15px;
+  }
+  .selec-dispositivo
+  {
+    position: relative;
+    left: 450px;
+    width: 50px;
+    bottom: 37px;
+  }
+  .selec-loca{
+    position: relative;
+    left: 600px;
+    width: 50px;
+    bottom: 59px;
+  }
+  .selec-periodo{
+    position: relative;
+    left: 150px;
+    bottom: 22px;
+  }
+  select{
+    width: 130px;
+    border-radius: 20px;
+    background-color: #D6DADF;
+  }
+  /*===== estilo e posicionamento card relatorio  =====*/
+  .grelatorio{
+    width: 16%;
+    height: 85%;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 115%;
+    left: 83%;
+    border-radius: 20px;
+  }
+  .txt-relatorio{
+    position: relative;
+    width: 180px;
+    top: 20px;
+    left:30px;
+  }
+  /*===== botões card relatorio  =====*/
+.btn-1{
+  position: relative;
+  width: 80%;
+  height: 45px;
+  background-color: #FCFCFC;
+  border-radius: 30px;
+  left: 10px;
+  margin: 10px;
+}
+/*===== Gráficos  =====*/
+.grafico{
+  position: relative;
+  right:  1170%;
+  width: 1830%;
+}
+.grafico2{
+  width: 80%;
+  position: relative;
+  bottom: 100px;
+  left: 10px;
+}
+/*===== img trofeu  =====*/
+.img-trofeu{
+  position: relative;
+  top: 40px;
+  width: 60px;
+  left: 4px;
+}
+.legend-minibox{
+  font-size: 12px;
+  position: relative;
+  left: 70px;
+  bottom: 40px;
+  width: 60px;
+}
+.legend-minibox2{
+  position: relative;
+  font-size: 14px;
+  color: #FFC107;
+  left: 70px;
+  bottom: 52px;
+  
+}
+.img-seta{
+  position: relative;
+  left: 130px;
+  bottom: 145px;
+}
+/*===== box empresa mais economica  =====*/
+.box-scroll{
+  position: relative;
+  width: 17%;
+  height: 40%;
+  background-color: #FBFBFB;
+  left: 82%;
+  border-radius: 10%;
+  bottom: 30px;
+}
+
+input{
+  background-color: #D6DADF;
+  border: transparent;
+}
+/*===== campo de busca  =====*/
+.search-text{
+  width: 63%;
+}
+/*===== posicionamento setas  =====*/
+.navdir{
+  position: relative;
+  bottom: 180px;
+  left: 770px;
+  width: 40px;
+}
+.navesq{
+  position: relative;
+  bottom:215px;
+  width: 40px;
+  left: 20px;
+}
+/*===== img cabeçalho perfil  =====*/
+.foto {
+  width: 40px;
+  position: relative;
+  top: 10px;
+}
